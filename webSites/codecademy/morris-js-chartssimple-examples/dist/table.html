@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <style>
+        table {
+            width: 90%;
+            height: 40%;
+        }
+        
+        #tableName {
+            font-size: 1.5rem;
+            font-weight: 900;
+        }
+        
+        td,
+        th {
+            border: 1px solid rgb(190, 190, 190);
+            padding: 10px;
+        }
+        
+        td {
+            text-align: center;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #eee;
+        }
+        
+        th[scope="col"] {
+            background-color: #696969;
+            color: #fff;
+        }
+        
+        th[scope="row"] {
+            background-color: #d7d9f2;
+        }
+        
+        caption {
+            padding: 10px;
+            caption-side: bottom;
+        }
+        
+        table {
+            border-collapse: collapse;
+            border: 2px solid rgb(200, 200, 200);
+            letter-spacing: 1px;
+            font-family: sans-serif;
+            font-size: .8rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <!-- <table>
+        <caption>Średni stan zapasu</caption>
+        <tr>
+            <th scope="col">okres [rok/ miesiąc]</th>
+            <th scope="col">2010</th>
+            <th scope="col">2011</th>
+            <th scope="col">2012</th>
+            <th scope="col">2013</th>
+            <th scope="col">2014</th>
+            <th scope="col">2015</th>
+            <th scope="col">2016</th>
+            <th scope="col">2017</th>
+            <th scope="col">2018</th>
+            <th scope="col">2019</th>
+            <th scope="col">2020</th>
+            <th scope="col">2021</th>
+            <th scope="col">2022</th>
+            <th scope="col">styczeń</th>
+            <th scope="col">luty</th>
+            <th scope="col">marzec</th>
+            <th scope="col">kwiecień</th>
+            <th scope="col">maj</th>
+            <th scope="col">czerwiec</th>
+            <th scope="col">lipiec</th>
+            <th scope="col">sierpień</th>
+            <th scope="col">wrzesień</th>
+            <th scope="col">październik</th>
+            <th scope="col">listopad</th>
+            <th scope="col">grudzień</th>
+
+        </tr>
+        <tr>
+            <th scope="row">stal zimnowalcowana</th>
+            <td scope="col">2010</td>
+            <td scope="col">2011</td>
+            <td scope="col">2012</td>
+            <td scope="col">2013</td>
+            <td scope="col">2014</td>
+            <td scope="col">2015</td>
+            <td scope="col">2016</td>
+            <td scope="col">2017</td>
+            <td scope="col">2018</td>
+            <td scope="col">2019</td>
+            <td scope="col">2020</td>
+            <td scope="col">2021</td>
+            <td scope="col">2022</td>
+            <td scope="col">styczeń</td>
+            <td scope="col">luty</td>
+            <td scope="col">marzec</td>
+            <td scope="col">kwiecień</td>
+            <td scope="col">maj</td>
+            <td scope="col">czerwiec</td>
+            <td scope="col">lipiec</td>
+            <td scope="col">sierpień</td>
+            <td scope="col">wrzesień</td>
+            <td scope="col">październik</td>
+            <td scope="col">listopad</td>
+            <td scope="col">grudzień</td>
+        </tr>
+        <tr>
+            <th scope="row">stal ocynkowana</th>
+            <td>7</td>
+        </tr>
+        <tr>
+            <th scope="row">stal ocynkowana ogniowo</th>
+            <td>7</td>
+        </tr>
+        <tr>
+            <th scope="row">stal ocynkowana alucynk</th>
+            <td>7</td>
+        </tr>
+        <tr>
+            <th scope="row">stal ocynkowana elektrolitycznie</th>
+            <td>7</td>
+        </tr>
+        <tr>
+            <th scope="row">stal gorącowalcowana</th>
+            <td>7</td>
+        </tr>
+        <tr>
+            <th scope="row">stal gorącowalcowana "Domex"</th>
+            <td>7</td>
+        </tr>
+        <tr>
+            <th scope="row">stal nierdzewna</th>
+            <td>7</td>
+        </tr>
+        <tr>
+            <th scope="row">stal nierdzewna 1.40xx</th>
+            <td>7</td>
+        </tr>
+        <tr>
+            <th scope="row">stal nierdzewna 1.43xx</th>
+            <td>7</td>
+        </tr>
+        <tr>
+            <th scope="row">stal nierdzewna 1.44xx</th>
+            <td>7</td>
+        </tr>
+        <tr>
+            <th scope="row">stal nierdzewna 1.45xx</th>
+            <td>7</td>
+        </tr>
+        <tr>
+            <th scope="row">aluminium</th>
+            <td>7</td>
+        </tr>
+        <tr>
+            <th scope="row">miedź</th>
+            <td>7</td>
+        </tr>
+        <tr>
+            <th scope="row">stal zimnowalcowana</th>
+            <td>7</td>
+        </tr>
+    </table> -->
+
+    <table class="main_table">
+        <thead>
+            <tr id="tableName">
+                <th colspan="25">Raport transakcji magazynu blach -> średni stan zapasu [ilość 'kg']</th>
+            </tr>
+            <tr>
+                <th>grupa/ okres</th>
+                <th>2017</th>
+                <th>2018</th>
+                <th>2019</th>
+                <th>2020</th>
+                <th>2021</th>
+                <th>2022</th>
+                <th>sty</th>
+                <th>lut</th>
+                <th>mar</th>
+                <th>kwi</th>
+                <th>maj</th>
+                <th>cze</th>
+                <th>lip</th>
+                <th>sie</th>
+                <th>wrz</th>
+                <th>paź</th>
+                <th>lis</th>
+                <th>gru</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th>head1</th>
+                <td>2017</td>
+                <td>2018</td>
+                <td>2019</td>
+                <td>2020</td>
+                <td>2021</td>
+                <td>2022</td>
+                <td>sty</td>
+                <td>lut</td>
+                <td>mar</td>
+                <td>kwi</td>
+                <td>maj</td>
+                <td>cze</td>
+                <td>lip</td>
+                <td>sie</td>
+                <td>wrz</td>
+                <td>paź</td>
+                <td>lis</td>
+                <td>gru</td>
+            </tr>
+            <tr>
+                <th>head1</th>
+                <td>2017</td>
+                <td>2018</td>
+                <td>2019</td>
+                <td>2020</td>
+                <td>2021</td>
+                <td>2022</td>
+                <td>sty</td>
+                <td>lut</td>
+                <td>mar</td>
+                <td>kwi</td>
+                <td>maj</td>
+                <td>cze</td>
+                <td>lip</td>
+                <td>sie</td>
+                <td>wrz</td>
+                <td>paź</td>
+                <td>lis</td>
+                <td>gru</td>
+            </tr>
+            <tr>
+                <th>head1</th>
+                <td>2017</td>
+                <td>2018</td>
+                <td>2019</td>
+                <td>2020</td>
+                <td>2021</td>
+                <td>2022</td>
+                <td>sty</td>
+                <td>lut</td>
+                <td>mar</td>
+                <td>kwi</td>
+                <td>maj</td>
+                <td>cze</td>
+                <td>lip</td>
+                <td>sie</td>
+                <td>wrz</td>
+                <td>paź</td>
+                <td>lis</td>
+                <td>gru</td>
+            </tr>
+            <tr>
+                <th>head1</th>
+                <td>2017</td>
+                <td>2018</td>
+                <td>2019</td>
+                <td>2020</td>
+                <td>2021</td>
+                <td>2022</td>
+                <td>sty</td>
+                <td>lut</td>
+                <td>mar</td>
+                <td>kwi</td>
+                <td>maj</td>
+                <td>cze</td>
+                <td>lip</td>
+                <td>sie</td>
+                <td>wrz</td>
+                <td>paź</td>
+                <td>lis</td>
+                <td>gru</td>
+            </tr>
+            <tr>
+                <th>head1</th>
+                <td>2017</td>
+                <td>2018</td>
+                <td>2019</td>
+                <td>2020</td>
+                <td>2021</td>
+                <td>2022</td>
+                <td>sty</td>
+                <td>lut</td>
+                <td>mar</td>
+                <td>kwi</td>
+                <td>maj</td>
+                <td>cze</td>
+                <td>lip</td>
+                <td>sie</td>
+                <td>wrz</td>
+                <td>paź</td>
+                <td>lis</td>
+                <td>gru</td>
+            </tr>
+            <tr>
+                <th>head1</th>
+                <td>2017</td>
+                <td>2018</td>
+                <td>2019</td>
+                <td>2020</td>
+                <td>2021</td>
+                <td>2022</td>
+                <td>sty</td>
+                <td>lut</td>
+                <td>mar</td>
+                <td>kwi</td>
+                <td>maj</td>
+                <td>cze</td>
+                <td>lip</td>
+                <td>sie</td>
+                <td>wrz</td>
+                <td>paź</td>
+                <td>lis</td>
+                <td>gru</td>
+            </tr>
+            <tr>
+                <th>head1</th>
+                <td>2017</td>
+                <td>2018</td>
+                <td>2019</td>
+                <td>2020</td>
+                <td>2021</td>
+                <td>2022</td>
+                <td>sty</td>
+                <td>lut</td>
+                <td>mar</td>
+                <td>kwi</td>
+                <td>maj</td>
+                <td>cze</td>
+                <td>lip</td>
+                <td>sie</td>
+                <td>wrz</td>
+                <td>paź</td>
+                <td>lis</td>
+                <td>gru</td>
+            </tr>
+            <tr>
+                <th>head1</th>
+                <td>2017</td>
+                <td>2018</td>
+                <td>2019</td>
+                <td>2020</td>
+                <td>2021</td>
+                <td>2022</td>
+                <td>sty</td>
+                <td>lut</td>
+                <td>mar</td>
+                <td>kwi</td>
+                <td>maj</td>
+                <td>cze</td>
+                <td>lip</td>
+                <td>sie</td>
+                <td>wrz</td>
+                <td>paź</td>
+                <td>lis</td>
+                <td>gru</td>
+            </tr>
+            <tr>
+                <th>head1</th>
+                <td>2017</td>
+                <td>2018</td>
+                <td>2019</td>
+                <td>2020</td>
+                <td>2021</td>
+                <td>2022</td>
+                <td>sty</td>
+                <td>lut</td>
+                <td>mar</td>
+                <td>kwi</td>
+                <td>maj</td>
+                <td>cze</td>
+                <td>lip</td>
+                <td>sie</td>
+                <td>wrz</td>
+                <td>paź</td>
+                <td>lis</td>
+                <td>gru</td>
+            </tr>
+            <tr>
+                <th>head1</th>
+                <td>2017</td>
+                <td>2018</td>
+                <td>2019</td>
+                <td>2020</td>
+                <td>2021</td>
+                <td>2022</td>
+                <td>sty</td>
+                <td>lut</td>
+                <td>mar</td>
+                <td>kwi</td>
+                <td>maj</td>
+                <td>cze</td>
+                <td>lip</td>
+                <td>sie</td>
+                <td>wrz</td>
+                <td>paź</td>
+                <td>lis</td>
+                <td>gru</td>
+            </tr>
+            <tr>
+                <th>head1</th>
+                <td>2017</td>
+                <td>2018</td>
+                <td>2019</td>
+                <td>2020</td>
+                <td>2021</td>
+                <td>2022</td>
+                <td>sty</td>
+                <td>lut</td>
+                <td>mar</td>
+                <td>kwi</td>
+                <td>maj</td>
+                <td>cze</td>
+                <td>lip</td>
+                <td>sie</td>
+                <td>wrz</td>
+                <td>paź</td>
+                <td>lis</td>
+                <td>gru</td>
+            </tr>
+            <tr>
+                <th>head1</th>
+                <td>2017</td>
+                <td>2018</td>
+                <td>2019</td>
+                <td>2020</td>
+                <td>2021</td>
+                <td>2022</td>
+                <td>sty</td>
+                <td>lut</td>
+                <td>mar</td>
+                <td>kwi</td>
+                <td>maj</td>
+                <td>cze</td>
+                <td>lip</td>
+                <td>sie</td>
+                <td>wrz</td>
+                <td>paź</td>
+                <td>lis</td>
+                <td>gru</td>
+            </tr>
+            <tr>
+                <th>head1</th>
+                <td>2017</td>
+                <td>2018</td>
+                <td>2019</td>
+                <td>2020</td>
+                <td>2021</td>
+                <td>2022</td>
+                <td>sty</td>
+                <td>lut</td>
+                <td>mar</td>
+                <td>kwi</td>
+                <td>maj</td>
+                <td>cze</td>
+                <td>lip</td>
+                <td>sie</td>
+                <td>wrz</td>
+                <td>paź</td>
+                <td>lis</td>
+                <td>gru</td>
+            </tr>
+            <tr>
+                <th>head1</th>
+                <td>2017</td>
+                <td>2018</td>
+                <td>2019</td>
+                <td>2020</td>
+                <td>2021</td>
+                <td>2022</td>
+                <td>sty</td>
+                <td>lut</td>
+                <td>mar</td>
+                <td>kwi</td>
+                <td>maj</td>
+                <td>cze</td>
+                <td>lip</td>
+                <td>sie</td>
+                <td>wrz</td>
+                <td>paź</td>
+                <td>lis</td>
+                <td>gru</td>
+            </tr>
+            <tr>
+                <th>head1</th>
+                <td>2017</td>
+                <td>2018</td>
+                <td>2019</td>
+                <td>2020</td>
+                <td>2021</td>
+                <td>2022</td>
+                <td>sty</td>
+                <td>lut</td>
+                <td>mar</td>
+                <td>kwi</td>
+                <td>maj</td>
+                <td>cze</td>
+                <td>lip</td>
+                <td>sie</td>
+                <td>wrz</td>
+                <td>paź</td>
+                <td>lis</td>
+                <td>gru</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>suma</th>
+                <td>2017</td>
+                <td>2018</td>
+                <td>2019</td>
+                <td>2020</td>
+                <td>2021</td>
+                <td>2022</td>
+                <td>sty</td>
+                <td>lut</td>
+                <td>mar</td>
+                <td>kwi</td>
+                <td>maj</td>
+                <td>cze</td>
+                <td>lip</td>
+                <td>sie</td>
+                <td>wrz</td>
+                <td>paź</td>
+                <td>lis</td>
+                <td>gru</td>
+            </tr>
+        </tfoot>
+
+    </table>
+    <script src="" async defer></script>
+</body>
+
+</html>
